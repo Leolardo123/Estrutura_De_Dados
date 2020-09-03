@@ -1,0 +1,14 @@
+Exercicio 1:Inversão de frase, palavra por palavra ex: odranoel arerref -> leonardo ferreira
+	https://onlinegdb.com/HJ1rMsA7w
+
+Exercicio 2:Empilhar números em ordem decrescente (fundo - topo) na pilha a
+	https://onlinegdb.com/B1pfzs0QD
+	
+Exercicio 3:Detectar balanceamento de simbolos '{([])}'
+	https://onlinegdb.com/HkIrn5AXD
+
+Exercicio 4:Achar razão do erro no código
+	https://onlinegdb.com/rJKQLqA7P
+
+Exercicio 5:Corrigir pilha com vetor char (Itemp não suporta vetor)
+	https://onlinegdb.com/r1hZfqCQv
