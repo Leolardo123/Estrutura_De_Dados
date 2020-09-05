@@ -1,0 +1,12 @@
+Exercicio 1:Teste de expressão posfixa  com parenteseamento completo
+	https://onlinegdb.com/BySZrrb4P
+
+Exercicio 2:Teste de expressão posfixa  sem necessidade de parenteseamento
+	https://onlinegdb.com/BJiyrSZNv
+	
+Exercicio 3:Expressão posfixa posfixa  sem necessidade de parenteseamento com calculo do resultado final
+	https://onlinegdb.com/HJxoVH-Nv
+
+Exercicio 4:Expressão posfixa  (booleana) com parenteseamento completo com calculo do resultado final
+	https://onlinegdb.com/SJAdVSWEv
+

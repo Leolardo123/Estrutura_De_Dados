@@ -13,3 +13,10 @@ os Códigos em linguagem 'c' estão nas pastas de suas respectivas aulas, caso d
       <h3>Exercicio 3</h3>:<a href="https://onlinegdb.com/HkIrn5AXD">Detectar balanceamento de simbolos '{([])}'</a>
       <h3>Exercicio 4</h3>:<a href="https://onlinegdb.com/rJKQLqA7P">Achar razão do erro no código</a> 
       <h3>Exercicio 5</h3>:<a href="https://onlinegdb.com/r1hZfqCQv">Corrigir pilha com vetor char</a> 
+
+<h2>Aula 3</h2>
+      lista_aula_3.txt
+      <h3>Exercicio 1</h3>:<a href="https://onlinegdb.com/BySZrrb4P">Teste de expressão posfixa  com parenteseamento completo</a> 
+      <h3>Exercicio 2</h3>:<a href="https://onlinegdb.com/BJiyrSZNv">Teste de expressão posfixa  sem necessidade de parenteseamento</a> 
+      <h3>Exercicio 3</h3>:<a href="https://onlinegdb.com/HJxoVH-Nv">Expressão posfixa posfixa  sem necessidade de parenteseamento com calculo do resultado final</a>
+      <h3>Exercicio 4</h3>:<a href="https://onlinegdb.com/SJAdVSWEv">Expressão posfixa  (booleana) com parenteseamento completo com calculo do resultado final</a> 
