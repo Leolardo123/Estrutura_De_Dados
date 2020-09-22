@@ -51,4 +51,3 @@ void destroip(Pilha *Q) {
    free(*Q);
    *Q = NULL;
 }
-

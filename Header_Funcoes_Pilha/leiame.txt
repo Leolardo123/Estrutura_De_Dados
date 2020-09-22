@@ -1,3 +1,0 @@
-Copie e cole o arquivo header pilha.h na pasta de bibliotecas da sua IDE para poder usar as funções de pilha
-
-Dev C++ -> C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\include

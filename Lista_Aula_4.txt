@@ -1,0 +1,10 @@
+Exercicio 1: Teste de frase palindroma
+	https://onlinegdb.com/BJDUmP8SP
+Exercicio 2: Teste de caracter somando número
+	https://onlinegdb.com/rJ6c7PUBD
+Exercicio 3: Teste de calculo execução de processo
+	https://onlinegdb.com/ryNTHvIHv
+Exercicio 4: Tempo necessario para organizar uma fila de processos
+	https://onlinegdb.com/Hyx0_w8rP
+Exercicio 5: Conchas
+	https://onlinegdb.com/Bkkr4dIHw
