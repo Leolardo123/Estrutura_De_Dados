@@ -29,7 +29,7 @@ alguns dos programas que foram compilados usam bibliotecas que ficam mais acessi
 <h2>Aula 4</h2>
       lista_aula_4.txt
       <h3>Exercicio 1</h3>:<a href="https://onlinegdb.com/BJDUmP8SP">📑Teste de frase palindroma</a> 
-      <h3>Exercicio 2</h3>:<a href="https://onlinegdb.com/rJ6c7PUBD">📑Teste de expressão posfixa  sem necessidade de parenteseamento</a> 
-      <h3>Exercicio 3</h3>:<a href="https://onlinegdb.com/ryNTHvIHv">✏️Teste de caracter somando número</a>
+      <h3>Exercicio 2</h3>:<a href="https://onlinegdb.com/rJ6c7PUBD">📑Teste de caracter somando número</a> 
+      <h3>Exercicio 3</h3>:<a href="https://onlinegdb.com/ryNTHvIHv">✏️Tempo de execução dos processos</a>
       <h3>Exercicio 4</h3>:<a href="https://onlinegdb.com/Hyx0_w8rP">📑Tempo necessario para organizar uma fila de processos</a> 
       <h3>Exercicio 5</h3>:<a href="https://onlinegdb.com/Bkkr4dIHw">✏️Conchas</a> 
