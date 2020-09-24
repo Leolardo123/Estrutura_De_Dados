@@ -10,15 +10,15 @@
 #define col(p)   ((p)%100)
 
 int I[dim][dim] = {
-        			{2, 2, 2, 2, 2, 2, 2, 2, 2},
-        			{2, 2, 2, 2, 6, 2, 2, 2, 2},
-        			{2, 2, 2, 6, 6, 6, 2, 2, 2},
-        			{2, 2, 6, 6, 3, 6, 6, 2, 2},
-        			{2, 6, 6, 3, 3, 3, 6, 6, 2},
-        			{2, 2, 6, 6, 3, 6, 6, 2, 2},
-        			{2, 2, 2, 6, 6, 6, 2, 2, 2},
-        			{2, 2, 2, 2, 6, 2, 2, 2, 2},
-        			{2, 2, 2, 2, 2, 2, 2, 2, 2}
+        			{0, 0, 0, 0, 0, 0, 0, 0, 0},
+					{0, 0, 0, 0, 1, 0, 0, 0, 0},
+					{0, 0, 0, 1, 1, 1, 0, 0, 0},
+					{0, 0, 1, 1, 1, 1, 1, 0, 0},
+					{0, 1, 1, 1, 1, 1, 1, 1, 0},
+					{0, 0, 2, 0, 0, 0, 2, 0, 0},
+					{0, 0, 2, 0, 0, 0, 2, 0, 0},
+					{0, 0, 2, 2, 2, 2, 2, 0, 0},
+					{0, 0, 0, 0, 0, 0, 0, 0, 0}
 				};
 
 
@@ -60,54 +60,50 @@ void colorir(int I[dim][dim], int i, int j, int n) {
 	destroif(&F);
 }
 
-void salvar(int (*I)[dim][dim],char *s){
-	scanf("%c",&s);
-	FILE *a = fopen(s,"wb");
-	if(!a){
-		printf("\nArquivo nao pode ser aberto...\n");
-		fclose(a);
+void salvar(char *s){
+	FILE *arquivo;
+
+	arquivo = fopen(s,"w");
+
+	if(!arquivo){
+		printf("Arquivo nao pode ser criado...\n");
 		return;
 	}
-	if(!I){
-		fclose(a);
-		puts("\nErro imagem está vazia!\n");
-		fclose(a);
-		return;
-	}
-	fwrite(I, sizeof(int), dim*dim, a);
-	if(fread(I, sizeof(int), dim*dim, a) != dim*dim){
-		for(int j=0; j<dim; j++) {
-    		for(int i=0; i<dim; i++){
-        		printf(" %d", I[j][i]);	
-			}
-			printf("\n");
-		}
-	}
-	fclose(a);
-}
-
-void inicia(int (*I)[dim][dim],char *s){
-	s = "img.txt";
-
-	FILE *a = fopen(s,"wb");
-	if(!a){
-		printf("\nArquivo nao encontrado:%s",s);
-		abort();
-	}
-	fread(I, sizeof(float), dim*dim, a);
 	for(int i=0;i<dim;i++){
 		for(int j=0;j<dim;j++){
-			printf(" %d ",&I[i][j]);
+			fprintf(arquivo,"%d ",I[i][j]);
 		}
-		printf("\n");
+		fprintf(arquivo,"\n");
 	}
-	fclose(a);
-	return;
+	fclose(arquivo);
+}
+
+int inicia(char *s){
+	FILE *arquivo;
+
+	arquivo = fopen(s,"r");
+
+	if(!arquivo){
+		printf("Arquivo nao existe...\n");
+		return 0;
+	}else{
+		printf("imagem anterior:\n");
+		exiba(I);
+		printf("\n\n\n Imagem Carregada:\n");
+	}
+	for(int i=0;i<dim;i++){
+		for(int j=0;j<dim;j++){
+			fscanf(arquivo,"%d ",&I[i][j]);
+		}
+		fscanf(arquivo,"\n");
+	}
+	fclose(arquivo);
+	return 1;
 }
 
 int main(void){
 	char s[256];
-    int i,j,n=0,opt=0;
+    int i,j,n=0,opt=0,msg=0;
 	do{
 		printf("(1)-Abrir como txt\n(2)-Abrir imagem padrão\n(0)-Sair");
 		scanf("%d",&opt);
@@ -115,18 +111,19 @@ int main(void){
 			case 1:
 				printf("digite o nome do arquivo:");
 				scanf("%s",s);
-				inicia(&I,s);
-			break;
+				msg = inicia(s);
+				break;
 			case 2:break;
 			case 0:return 0;break;
 
 		}
-	}while(!I);
+	}while(opt!=2&&msg==0);
 
 	do{
 		exiba(I);
 		printf("\n\n(1) - Nova cor \n(2) - Salvar em txt (ou -1 para sair)? ");
 		scanf("%d",&opt);
+		if(opt==-1)break;
 		switch(opt){
 			case 1:
 				printf("\ndigite o número da cor");
@@ -139,8 +136,8 @@ int main(void){
 			break;
 			case 2:
 				printf("\ndigite o nome do arquivo");
-				scanf("%c",&s);
-				salvar(&I,s);
+				scanf("%s",&s);
+				salvar(s);
 			break;
 		}
 	}while(n>=0);
