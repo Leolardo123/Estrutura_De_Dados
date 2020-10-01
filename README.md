@@ -35,8 +35,12 @@ alguns dos programas que foram compilados usam bibliotecas que ficam mais acessi
       <h3>Exercicio 5</h3>:<a href="https://onlinegdb.com/Bkkr4dIHw">✏️Conchas</a> 
 
 <h2>Aula 5</h2>
-      lista_aula_4.txt
+
       <h3>Exercicio 1</h3>:📑Exibir imagem formada por números</a> 
       <h3>Exercicio 2</h3>:📑Corrigir erro na troca de cores da imagen</a> 
       <h3>Exercicio 3</h3>:📑Salvar imagem em forma de texto</a>
+
+<h2>Aula 6</h2>
+
+	*Sem lista, existem apenas os arquivos em c na pasta Aula 6*
  
