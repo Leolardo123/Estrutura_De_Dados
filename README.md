@@ -43,4 +43,8 @@ alguns dos programas que foram compilados usam bibliotecas que ficam mais acessi
 <h2>Aula 6</h2>
 
 	*Sem lista, existem apenas os arquivos em c na pasta Aula 6*
+
+<h2>Aula 7</h2>
+
+	*Sem lista, existem apenas os arquivos em c na pasta Aula 7*
  
