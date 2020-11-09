@@ -12,9 +12,9 @@ O PROPÓSITO DESSE CÓDIGO É DEMONSTRAR UM ERRO, EM ALGUM MOMENTO NA EXECUÇÃO
 #include"pilha.h"//pilhadechar
 
 int main(void){
-    PilhaP=pilha(5);
-    chars[11];
-    for(inti=1;i<=3;i++){
+    Pilha P=pilha(5);
+    char s[11];
+    for(int i=1;i<=3;i++){
         printf("?");
         gets(s);
         empilha(s,P);
