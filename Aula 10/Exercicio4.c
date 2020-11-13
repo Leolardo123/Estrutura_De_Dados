@@ -22,8 +22,24 @@ void exibe(Arv A,int n) {
     exibe(A->esq,n+1);
 }
 
+int nos(Arv A){
+    if(!A)return 0;
+    return nos(A->esq)+nos(A->dir)+1;
+}
+
+int soma(Arv A){
+    if(A==NULL)return 0;
+    return A->item+soma(A->esq)+soma(A->dir);
+}
+
+int folha(Arv A){
+    if(A==NULL)return 0;
+    if(A->esq==NULL&&A->dir==NULL)return 1;
+    return folha(A->esq)+folha(A->dir);
+}   
 int main(void){
-    Arv I = arv(arv(NULL,2,NULL),1,arv(NULL,3,arv(NULL,4,NULL)));
+    Arv I = arv(arv(NULL,2,NULL),1,arv(NULL,3,arv(NULL,4,arv(arv(NULL,6,NULL),5,arv(NULL,7,NULL)))));
     exibe(I,0);
+    printf("\nQuantidade de folhas da arvore I:\n%d",folha(I));
     return 0;
 }
