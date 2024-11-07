@@ -5,7 +5,7 @@ cada link é um código salvo na plataforma onlineGDB
 
 os Códigos em linguagem 'c' estão nas pastas de suas respectivas aulas, caso deseje compilar os códigos no seu computador não esqueça de instalar a biblioteca pilha.h na sua respectiva IDE
 
-alguns dos programas que foram compilados usam bibliotecas que ficam mais acessiveis na IDE Pelles C, link http://www.smorgasbordet.com/pellesc/ 
+alguns programas usam bibliotecas que já estão instaladas por padrão na IDE Pelles C, link http://www.smorgasbordet.com/pellesc/ 
 
 📑 = tem comentário
 ✏️ = não tem comentario
@@ -35,7 +35,6 @@ alguns dos programas que foram compilados usam bibliotecas que ficam mais acessi
       <h3>Exercicio 5</h3>:<a href="https://onlinegdb.com/Bkkr4dIHw">✏️Conchas</a> 
 
 <h2>Aula 5</h2>
-
       <h3>Exercicio 1</h3>:📑Exibir imagem formada por números</a> 
       <h3>Exercicio 2</h3>:📑Corrigir erro na troca de cores da imagen</a> 
       <h3>Exercicio 3</h3>:📑Salvar imagem em forma de texto</a>
